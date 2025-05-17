@@ -5,14 +5,14 @@ const DATA = [
     title: "Web Developer Junior - IsDevExperts S.A.S",
     date: "2024 - 2025",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum, incidunt sunt nostrum quae quas, iure ipsum obcaecati harum ipsa culpa cum esse itaque totam, enim rem voluptatum suscipit in? Soluta doloremque nostrum officiis omnis aut explicabo recusandae dolor mollitia dolore repellat voluptatibus, quod iure amet numquam hic ipsum? Nobis, ratione? Praesentium, alias cupiditate. Earum iusto perspiciatis saepe suscipit velit? Exercitationem aspernatur fugiat iure odio obcaecati pariatur, quos enim quisquam expedita aliquam iusto molestias eum consectetur delectus tempora consequuntur.",
+      "Active participation in the design and development of modern and responsive web interfaces using React with TypeScript (TSX) and Tailwind CSS.Creation of dynamic web pages integrating interactive components, while respecting modern design and accessibility principles.Implementation of front-end logic, state management, REST API calls, and integration with authentication systems.Worked collaboratively with the back-end team and used Git for code versioning.Performance optimization and adaptation to different screen formats to ensure a seamless user experience.",
     technologies: ["React-tsx", "Nodejs", "Clerk", "JavaScript"],
   },
   {
-    title: "Web Developer Junior - IsDevExperts S.A.S",
+    title: "Web Developer Fullstack Junior - IsDevExperts S.A.S",
     date: "2025 - Present",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eum, incidunt sunt nostrum quae quas, iure ipsum obcaecati harum ipsa culpa cum esse itaque totam, enim rem voluptatum suscipit in? Soluta doloremque nostrum officiis omnis aut explicabo recusandae dolor mollitia dolore repellat voluptatibus, quod iure amet numquam hic ipsum? Nobis, ratione? Praesentium, alias cupiditate. Earum iusto perspiciatis saepe suscipit velit? Exercitationem aspernatur fugiat iure odio obcaecati pariatur, quos enim quisquam expedita aliquam iusto molestias eum consectetur delectus tempora consequuntur.",
+      "Design and development of complete web interfaces in React TSX with Tailwind CSS, connected to a Node.js backend.Development of interactive and responsive components: forms, dynamic tables, statistical dashboards, and notification systems.Implementation of secure authentication via Clerk, application state management with React Hooks, and communication with the backend via Axios.Contribution to relational database architecture (MySQL) and implementation of server logic for query processing (CRUD, validations).Use of Git for versioning and team collaboration, with a constant focus on code maintainability and performance.",
     technologies: ["React-tsx", "Nodejs", "Clerk", "JavaScript"],
   },
 ];
