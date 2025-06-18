@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { FaArrowRightLong } from "react-icons/fa6";
+import virtualImg from "../assets/virtual.png";
 
 const PROJECTS = [
   {
@@ -9,6 +11,7 @@ const PROJECTS = [
       "A web-based attendance management application developed with React TSX and Tailwind CSS on the front end, offering a modern and responsive interface. The back end is powered by Node.js and Express, with a MySQL database to store user, attendance, and leave information. Authentication is handled via Clerk, and features like GPS position verification, QR code scanning, and inactivity detection enhance the overall experience. The result is a smooth and secure solution for real-time employee tracking.",
     technologies: ["React.js", "Mysql", "Tailwind Css", "Clerk"],
     photo: "image-Projet-1",
+    link: ""
   },
   {
     title: "Hardware Store Inventory Management",
@@ -18,7 +21,19 @@ const PROJECTS = [
       "A web-based stock management application built with React TSX and Tailwind CSS, offering a modern, intuitive, and responsive interface. The back end is powered by Node.js and Express, with a MySQL database to handle products and stock operations. Secure user authentication is managed through Clerk. This solution is designed to provide simple, efficient, and real-time inventory management, ideal for small businesses.",
     technologies: ["React.js", "Mysql", "Tailwind Css", "Clerk"],
     photo: "image-projet-2",
+    link: ""
   },
+  {
+    title: "Custom Virtual Landing Page",
+    image: virtualImg,
+    description:
+      "A modern and responsive landing page, designed with React TSX and Tailwind CSS, is ideal for showcasing a project, brand, or personal portfolio. The interface features smooth navigation, clean animations, and a clear presentation of content without a backend. Deployed via Vercel, it guarantees speed, accessibility, and a professional design, suitable for both desktop and mobile.",
+    technologies: ["React.tsx", "Tailwind Css"],
+    photo: "image-projet-3",
+    link: "https://siyandji-virtualr.vercel.app/"
+  },
+  
+  
 ];
 
 const Project = () => {
@@ -47,11 +62,11 @@ const Project = () => {
               transition={{ duration: 1 }}
             >
               <img
-                width={400}
-                height={400}
                 src={project.image}
                 alt={project.photo}
-                className="rounded shadow-lg w-full max-w-sm mx-auto"
+                className={`rounded shadow-lg mx-auto ${
+                project.photo === "image-projet-3" ? "h-[300px]" : "h-[300px]"
+                }`}
               />
             </motion.div>
 
@@ -73,6 +88,16 @@ const Project = () => {
                     {tech}
                   </span>
                 ))}
+              </div>
+              <div className="mt-10 max-w-36  ">
+                <a
+                  href={project.link} target="_blank" rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-neutral-900 to-neutral-300 p-2 flex rounded-lg items-center justify-center gap-3 
+                  hover:bg-white hover:text-black transition duration-300">
+                  <span>Started</span>                
+                  <FaArrowRightLong />
+                </a>
+
               </div>
             </motion.div>
           </div>
