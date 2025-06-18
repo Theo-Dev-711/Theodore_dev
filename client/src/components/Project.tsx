@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
-import virtualImg from "../assets/virtual.png";
+import virtualImg from "../assets/virtual.jpeg";
 
 const PROJECTS = [
   {
