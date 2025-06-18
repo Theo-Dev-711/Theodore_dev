@@ -62,12 +62,11 @@ const Project = () => {
               transition={{ duration: 1 }}
             >
               <img
+                width={300}
+                height={300}
                 src={project.image}
                 alt={project.photo}
-                className={`rounded shadow-lg mx-auto ${
-                project.photo === "image-projet-3" ? "h-[300px]" : "h-[300px]"
-                }`}
-              />
+                className="rounded shadow-lg mx-auto"/>
             </motion.div>
 
             {/* Texte à droite */}
