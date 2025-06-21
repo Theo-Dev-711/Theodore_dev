@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import virtualImg from "../assets/virtual.jpeg";
+import vente from "../assets/vente.png"
 
 const PROJECTS = [
   {
@@ -31,6 +32,15 @@ const PROJECTS = [
     technologies: ["React.tsx", "Tailwind CSS"],
     photo: "image-projet-3",
     link: "https://siyandji-virtualr.vercel.app/"
+  },
+  {
+    title: "Modern E-Commerce Starter App with React & Tailwind",
+    image: vente,
+    description:
+      "A modern and responsive e-commerce landing page, built with React TSX and Tailwind CSS, and deployed via Vercel.Perfect for showcasing an online store, products, or a personal brand.Sleek design, mobile-friendly layout, and smooth animations for an optimal user experience.No backend required for the demo — easily connectable to platforms like Firebase, Stripe, or Shopify for full functionality.",
+    technologies: ["React.tsx", "Tailwind CSS", "Slick"],
+    photo: "image-projet-4",
+    link: "https://siyandji-e-commerce.vercel.app/"
   }
 ];
 
