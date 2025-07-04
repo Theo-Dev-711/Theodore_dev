@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import virtualImg from "../assets/virtual.jpeg";
 import vente from "../assets/vente.jpeg"
+import startup from "../assets/startup.jpg"
+import Alowishus from "../assets/Alowishus.jpg"
 
 const PROJECTS = [
   {
@@ -38,10 +40,28 @@ const PROJECTS = [
     image: vente,
     description:
       "A modern and responsive e-commerce landing page, built with React TSX and Tailwind CSS, and deployed via Vercel.Perfect for showcasing an online store, products, or a personal brand.Sleek design, mobile-friendly layout, and smooth animations for an optimal user experience.No backend required for the demo — easily connectable to platforms like Firebase, Stripe, or Shopify for full functionality.",
-    technologies: ["React.tsx", "Tailwind CSS", "Slick"],
+    technologies: ["React.tsx", "Tailwind CSS", "React-Slick"],
     photo: "image-projet-4",
     link: "https://siyandji-e-commerce.vercel.app/"
-  }
+  },
+  {
+    title: "Responsive Landing Page for Tech Startups | Next.js & Tailwind CSS",
+    image: startup,
+    description:
+      "Modern and responsive landing page for a tech startup. Built with React, Tailwind CSS, and Aos animations. Perfect for showcasing a product, app, or tech service with style and high performance.",
+    technologies: ["Next js 15","React.tsx", "Tailwind CSS", "React-Slick", "Aos"],
+    photo: "image-projet-5",
+    link: "https://siyandji-startup-tech.vercel.app/"
+  },
+  {
+    title: "E-commerce Website for Alowishus Delicious Coffee | Next.js & Tailwind CSS",
+    image: Alowishus,
+    description:
+      "E-commerce website for Alowishus Delicious Coffee, developed with Next.js 15, Tailwind CSS, and Framer Motion. Fully responsive, SEO-friendly, and optimized for high performance.",
+    technologies: ["Next js 15","React.tsx", "Tailwind CSS", "React-Slick", "Aos"],
+    photo: "image-projet-5",
+    link: "https://siyandji-premium-caffe.vercel.app/"
+  },
 ];
 
 const Project = () => {
