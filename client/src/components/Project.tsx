@@ -64,7 +64,7 @@ const PROJECTS = [
     link: "https://siyandji-premium-caffe.vercel.app/"
   },
   {
-    title: "E-commerce Website for Alowishus Delicious Coffee | Next.js & Tailwind CSS",
+    title: "E-Commerce Exclusive - Quality Products | Next.js & Tailwind CSS",
     image: exclusive,
     description:
       "A modern e-commerce web application built with React, TypeScript, and Tailwind CSS. It features a responsive design, product catalog, user interaction, and clean UI — ideal for learning or small businesses.",
