@@ -4,6 +4,7 @@ import virtualImg from "../assets/virtual.jpeg";
 import vente from "../assets/vente.jpeg"
 import startup from "../assets/startup.jpg"
 import Alowishus from "../assets/Alowishus.jpg"
+import exclusive from "../assets/exclusive.jpg"
 
 const PROJECTS = [
   {
@@ -61,6 +62,15 @@ const PROJECTS = [
     technologies: ["Next js 15","React.tsx", "Tailwind CSS", "React-Slick", "Aos"],
     photo: "image-projet-5",
     link: "https://siyandji-premium-caffe.vercel.app/"
+  },
+  {
+    title: "E-commerce Website for Alowishus Delicious Coffee | Next.js & Tailwind CSS",
+    image: exclusive,
+    description:
+      "A modern e-commerce web application built with React, TypeScript, and Tailwind CSS. It features a responsive design, product catalog, user interaction, and clean UI — ideal for learning or small businesses.",
+    technologies: ["Next js 15", "React 19", "Tailwind CSS",],
+    photo: "image-projet-6",
+    link: "https://beta-site-v1-03.vercel.app/"
   },
 ];
 

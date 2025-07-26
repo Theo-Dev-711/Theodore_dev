@@ -6,6 +6,7 @@ import {
   SiJavascript,
   SiMysql,
   SiTailwindcss,
+  SiNextdotjs
 } from "react-icons/si";
 
 // Liste des technologies avec leurs icônes et couleurs
@@ -17,6 +18,7 @@ const technologies = [
   { name: "MySQL", icon: <SiMysql className="text-orange-400" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
   { name: "HTML5", icon: <FaHtml5 className="text-red-500" /> },
+  { name: "Next Js 15.3.4", icon: <SiNextdotjs className="" /> },
 ];
 
 const Technologie = () => {

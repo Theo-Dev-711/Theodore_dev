@@ -3,11 +3,32 @@ const Infos = [
     {
         addresse:"3PWP+GG Douala",
         tel:"673-330-148",
-        Email:"Theodoredev711@gmail.com",
+        Email:"juniordev711@gmail.com",
     }
 ]
 
 const Contact = () => {
+    const whatsappNumber = "237673330148";
+    const message = `Bonjour Theodore Dev, est-ce possible d'avoir un site web professionnel ? 💻✨
+        Nous pouvons débuter dès confirmation. Merci !`;
+    const encoded = encodeURIComponent(message);
+    const link = `https://wa.me/${whatsappNumber}?text=${encoded}`;
+
+    // mailtoLink
+    const email = "juniordev711@gmail.com";
+
+    const subject = "Demande de création de site web";
+    const body = `Bonjour Theodore Dev,
+
+Je suis intéressé par la création d'un site web professionnel. 
+Pouvez-vous me donner plus de détails sur vos offres et disponibilités ?
+
+Merci !`;
+
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+     // Tu peux afficher ou utiliser ce lien
+
   return (
     <div className='border-t border-stone-900  '>
         <motion.h2
@@ -24,11 +45,12 @@ const Contact = () => {
                         transition={{duration: 1}}
                         >{info.addresse}</motion.p>
                     <motion.p
+                        className="cursor-pointer"
                         whileInView={{opacity:1, x: 1}}
                         initial={{opacity: 1, x: 100}}
                         transition={{duration: 1}}
-                        >{info.tel}</motion.p>
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">{info.Email}</a>
+                    ><a href={link} target="_blank" rel="noopener noreferrer">Call Me for a Work {info.tel}</a></motion.p>
+                    <a href={mailtoLink} target="_blank" rel="noopener noreferrer">{info.Email}</a>
                 </div>
             ))}
         </div>
