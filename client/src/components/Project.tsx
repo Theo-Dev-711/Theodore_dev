@@ -5,6 +5,7 @@ import vente from "../assets/vente.jpeg"
 import startup from "../assets/startup.jpg"
 import Alowishus from "../assets/Alowishus.jpg"
 import exclusive from "../assets/exclusive.jpg"
+import cvbuilder from "../assets/cvbuilder.jpg"
 
 const PROJECTS = [
   {
@@ -71,6 +72,15 @@ const PROJECTS = [
     technologies: ["Next js 15", "React 19", "Tailwind CSS",],
     photo: "image-projet-6",
     link: "https://beta-site-v1-03.vercel.app/"
+  },
+  {
+    title: "Theo CV Builder | Next.js , Tailwind CSS & Daisyui",
+    image: cvbuilder,
+    description:
+      "Generate, customize, and easily download your professional CV with Theo CV Builder. Simple, fast, and effective to land your next job.",
+    technologies: ["Next js 15", "React 19", "Tailwind CSS", "Daisyui"],
+    photo: "image-projet-7",
+    link: "https://theo-cvbuilder.vercel.app/"
   },
 ];
 
