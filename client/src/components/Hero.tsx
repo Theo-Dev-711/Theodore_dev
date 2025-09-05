@@ -1,12 +1,12 @@
 
+import { useState } from 'react';
 import profile from '../assets/TheoProfile.jpeg';
 import { motion } from 'framer-motion'
+import { Loader2 } from "lucide-react"; // un spinner sympa
 
-const Data = {
-  HERO_CONTENT: `Full-stack web developer with two years of experience, passionate about modern technologies like React (TSX), Next.js, Tailwind CSS, Node.js, and Express. I enjoy creating clean and dynamic interfaces, and I continue to improve every day to develop powerful applications. My goal is to join a motivated team where I can continuously learn, contribute, and grow.
-Stack: React TSX, Tailwind CSS, Node.js, Express, MySQL, Git, Clerk
-Values: Clean code, constant learning, user experience`
-};
+
+
+
 
 const containerVariants = {
   hidden: { opacity: 0, x: -100 },
@@ -25,6 +25,25 @@ const childVariants = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
 }
 const Hero = () => {
+  const Data = {
+    HERO_CONTENT: `Full-stack web developer with two years of experience, passionate about modern technologies like React (TSX), Next.js, Tailwind CSS, Node.js, and Express. I enjoy creating clean and dynamic interfaces, and I continue to improve every day to develop powerful applications. My goal is to join a motivated team where I can continuously learn, contribute, and grow.
+Stack: React TSX, Tailwind CSS, Node.js, Express, MySQL, Git, Clerk
+Values: Clean code, constant learning, user experience`
+  };
+
+
+
+  const handleDownload = () => {
+    setDownloading(true);
+
+    // après 2 secondes, on arrête l’animation
+    // (juste pour simuler le téléchargement)
+    setTimeout(() => {
+      setDownloading(false);
+    }, 2000);
+  };
+
+  const [downloading, setDownloading] = useState(false);
   return (
     <div className="pb-4 lg:mb-36">
       <div className="flex flex-wrap lg:flex-row-reverse">
@@ -53,12 +72,25 @@ const Hero = () => {
             <motion.span variants={childVariants} className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl text-transparent'>Web Developer</motion.span>
             <motion.p variants={childVariants} className='my-2 w-full  py-6 text-xl leading-relaxed p-8 max-sm:p-4'>{Data.HERO_CONTENT}</motion.p> {/* Accéder à HERO_CONTENT */}
             <motion.a
-              variants={childVariants}
-              href="/Cv-Siyandji_youmbi_Theodore_junior.pdf"     // chemin vers ton PDF dans /public
-              download="Cv-Siyandji_youmbi_Theodore_junior.pdf"  // force le téléchargement
-              className="bg-white mx-auto rounded-full p-4 text-sm text-stone-800 mb-10"
+              href="/Cv-Siyandji_youmbi_Theodore_junior.pdf"
+              download="Cv-Siyandji_youmbi_Theodore_junior.pdf"
+              onClick={handleDownload}
+              whileTap={{ scale: 0.9 }}
+              className="bg-white flex items-center justify-center gap-2 mx-auto rounded-full px-6 py-3 text-sm text-stone-800 mb-10 shadow-md cursor-pointer"
             >
-              Download Resume
+              {downloading ? (
+                <>
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
+                  >
+                    <Loader2 className="w-4 h-4" />
+                  </motion.div>
+                  <span>Downloading...</span>
+                </>
+              ) : (
+                <span>Download Resume</span>
+              )}
             </motion.a>
           </div>
         </motion.div>
