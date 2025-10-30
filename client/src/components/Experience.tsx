@@ -19,12 +19,12 @@ const DATA = [
 
 const Experience = () => {
   return (
-    <div>
+    <div id="experience">
       <motion.h1
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-4xl text-center mt-24 pb-24"
+        className="text-4xl font-bold text-center mt-24 pb-24"
       >
         Experience
       </motion.h1>
@@ -55,7 +55,7 @@ const Experience = () => {
               <h3 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-transparent">
                 {data.title}
               </h3>
-              <p className="mb-4 text-stone-400">{data.description}</p>
+              <p className="mb-4 text-stone-400 text-justify">{data.description}</p>
               {data.technologies.map((tech, index) => (
                 <span
                   className="mr-2 rounded bg-stone-900 p-2 text-sm font-medium inline-block mb-2"

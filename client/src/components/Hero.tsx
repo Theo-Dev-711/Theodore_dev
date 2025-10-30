@@ -26,7 +26,7 @@ const childVariants = {
 }
 const Hero = () => {
   const Data = {
-    HERO_CONTENT: `Full-stack web developer with two years of experience, passionate about modern technologies like React (TSX), Next.js, Tailwind CSS, Node.js, and Express. I enjoy creating clean and dynamic interfaces, and I continue to improve every day to develop powerful applications. My goal is to join a motivated team where I can continuously learn, contribute, and grow.
+    HERO_CONTENT: `Full-stack web developer with Three years of experience, passionate about modern technologies like React (TSX), Next.js, Tailwind CSS, Node.js, and Express. I enjoy creating clean and dynamic interfaces, and I continue to improve every day to develop powerful applications. My goal is to join a motivated team where I can continuously learn, contribute, and grow.
 Stack: React TSX, Tailwind CSS, Node.js, Express, MySQL, Git, Clerk
 Values: Clean code, constant learning, user experience`
   };
@@ -45,7 +45,7 @@ Values: Clean code, constant learning, user experience`
 
   const [downloading, setDownloading] = useState(false);
   return (
-    <div className="pb-4 lg:mb-36">
+    <div id="acceuil" className="pb-4 lg:mb-36 mt-20">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center p-8 lg:p-8">
@@ -70,7 +70,7 @@ Values: Clean code, constant learning, user experience`
           <div className='flex flex-col items-center lg:items-start mt-10'>
             <motion.h2 variants={childVariants} className='pb-2 text-4xl tracking-tight max-sm:text-6xl sm:text-6xl lg:text-7xl'>Theodore Dev</motion.h2>
             <motion.span variants={childVariants} className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl text-transparent'>Web Developer</motion.span>
-            <motion.p variants={childVariants} className='my-2 w-full  py-6 text-xl leading-relaxed p-8 max-sm:p-4'>{Data.HERO_CONTENT}</motion.p> {/* Accéder à HERO_CONTENT */}
+            <motion.p variants={childVariants} className='my-2 w-full text-justify  py-6 text-xl leading-relaxed p-8 max-sm:p-4'>{Data.HERO_CONTENT}</motion.p> {/* Accéder à HERO_CONTENT */}
             <motion.a
               href="/Cv-Siyandji_youmbi_Theodore_junior.pdf"
               download="Cv-Siyandji_youmbi_Theodore_junior.pdf"
