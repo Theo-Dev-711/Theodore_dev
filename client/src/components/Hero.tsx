@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import profile from '../assets/TheoProfile.jpeg';
+import profile from '../assets/TheoProfile2.jpg';
 import { motion } from 'framer-motion'
 import { Loader2 } from "lucide-react"; // un spinner sympa
 
@@ -72,8 +72,8 @@ Values: Clean code, constant learning, user experience`
             <motion.span variants={childVariants} className='bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl text-transparent'>Web Developer</motion.span>
             <motion.p variants={childVariants} className='my-2 w-full text-justify  py-6 text-xl leading-relaxed p-8 max-sm:p-4'>{Data.HERO_CONTENT}</motion.p> {/* Accéder à HERO_CONTENT */}
             <motion.a
-              href="/Cv-Siyandji_youmbi_Theodore_junior.pdf"
-              download="Cv-Siyandji_youmbi_Theodore_junior.pdf"
+              href="/Cv-Siyandji youmbi Theodore junior.pdf"
+              download="Cv-Siyandji youmbi Theodore junior.pdf"
               onClick={handleDownload}
               whileTap={{ scale: 0.9 }}
               className="bg-white flex items-center justify-center gap-2 mx-auto rounded-full px-6 py-3 text-sm text-stone-800 mb-10 shadow-md cursor-pointer"

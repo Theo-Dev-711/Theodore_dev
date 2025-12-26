@@ -6,6 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import exclusive from "../assets/exclusive.jpg";
 import cvbuilder from "../assets/cvbuilder.jpg";
 import Cyberpgs from "../assets/Cyberpgs3.jpg"
+import GLearn from "../assets/Glearn.jpeg";
 
 //icon
 import { FaBoxOpen } from "react-icons/fa";
@@ -42,6 +43,25 @@ const PROJECTS = [
         link: "https://theodore-cyber-manager-iaae.vercel.app/home",
         category: "Web & Mobile",
     },
+    {
+        title: "GLearn | Plateforme de révision BTS Génie Logiciel",
+        image: GLearn, // assure-toi que l'import existe
+        description:
+            "GLearn est une plateforme éducative moderne conçue pour les étudiants en BTS Génie Logiciel de South Polytech. Elle centralise les sujets d’examens officiels, les corrigés et les corrections étudiantes, avec un système de rôles (étudiant, modérateur, admin), un suivi d’activité en temps réel et une interface moderne, responsive et orientée performance.",
+        technologies: [
+            "Next.js (App Router)",
+            "React + TypeScript",
+            "Tailwind CSS",
+            "Prisma ORM",
+            "PostgreSQL (Neon)",
+            "Clerk Auth",
+            "Supabase Realtime"
+        ],
+        photo: "image-projet-glearn",
+        link: "https://glearn-south-polytech-711.vercel.app",
+        category: "Web & Mobile",
+    }
+
     
 ];
 
